@@ -1,6 +1,7 @@
 body, html{
     margin:0;
     height: 100%;
+    overflow: hidden;
 }
 
 .parent-container {
@@ -20,6 +21,7 @@ body, html{
     display: flex;
     justify-content: center;
     align-items: center;
+    transition-duration: 0.5s;
 }
 
 .container1-name-area, .container1-button-area {
@@ -41,6 +43,7 @@ body, html{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 800;
     justify-content: center;
+    text-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.5);
 }
 
 .container1-name-area .gest {
@@ -58,6 +61,7 @@ body, html{
     font-size: medium;
     font-weight: 500;
     transition-duration: 0.3s;
+    box-shadow: 0 0 10px 0 rgba(128, 128, 128, 0.5);
 }
 
 .container1-button-area button:hover {
@@ -78,11 +82,37 @@ body, html{
     width: 75%;
     height: auto;
     user-select: none;
+
 }
 
 .container2-area img{
-    width: 75%;
+    width: 40%;
     height: auto;
+}
+.mp-img2{
+    position: absolute;
+}
+.mp-img1 {
+    position: absolute;
+    animation: loading1 0.7s 1 ease-out;
+}
+@keyframes loading1 {
+    from {
+        transform: translate(100%, 0);
+    }
+    to {
+        transform: translate(0, 0);
+    }
+    
+}
+@keyframes loading2 {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+    
 }
 
 @media screen and (max-width: 1000px) {
