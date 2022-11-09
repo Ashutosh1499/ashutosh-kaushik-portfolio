@@ -1,0 +1,362 @@
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+html {
+    width: 100%;
+    height: 100%;
+}
+section {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    height: 100%;
+}
+.flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flexTop {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+
+.mainContainer {
+    background-image: url("/Images/newbg.png");
+    height: 100%;
+}
+
+.greetSection {
+    height: 100%;
+}
+.greetingTexts {
+    width: 100%;
+    height: 50%;
+}
+.desDevLogo {
+    width: 100%;
+    height: 50%;
+}
+.desDevLogo img {
+    width: 50%;
+    height:auto;
+}
+.texts {
+    width: 100%;
+    height: 50%;
+}
+.one {
+    align-items: flex-end;
+}
+.two {
+    align-items: flex-start;
+}
+.textContainer {
+    text-align: center;
+    height: 50px;
+    color: #F05454;
+    font-weight: 700;
+    font-size: xx-large;
+    transform: translateX(100%);
+}
+
+.hider {
+    background: #222831;
+    height: 50px;
+    transform: translateX(0);
+    z-index: 1;
+}
+
+.anim11 {
+    animation: loadTest1 1s 1 forwards;
+}
+.anim12 {
+    animation: loadTest2 1s 1 forwards;
+}
+.anim21 {
+    animation: loadTest1 1s 1 forwards;
+    animation-delay: 1s;
+}
+.anim22 {
+    animation: loadTest2 1s 1 forwards;
+    animation-delay: 1s;
+}
+
+@keyframes loadTest1 {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(50%);
+    }
+}
+
+@keyframes loadTest2 {
+    0% {
+        transform: translateX(0);
+        background-color: #222831;
+    }
+    100% {
+        transform: translateX(50%);
+        background-color: transparent;
+    }
+}
+
+
+
+.topNavBar {
+    width: 100%;
+    height: 75px;
+    background-color: #F05454;
+    position: fixed;
+    z-index: 999;
+}
+
+.topNavBar .Alogo {
+    position: fixed;
+    left: 2.5%;
+}
+
+.topNavBar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: fixed;
+    right: 2.5%;
+}
+
+.topNavBar ul li {
+    float: left;
+    padding: 5px;
+    font-size: larger;
+    color: #DDDDDD;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.topNavBar ul li a {
+    color: #DDDDDD;
+    font-style: none;
+    text-decoration: none;
+    transition-duration: 0.2s;
+}
+
+.topNavBar ul li a:hover{
+    color: #30475E;
+}
+
+.topNavBar .active a{
+    color: #30475E;
+    font-weight: 800;
+}
+
+.topNavBar .Alogo img {
+    height: 50px;
+    width: auto;
+}
+
+.aboutSection {
+    height: 100%;
+    background-color: #222831;
+}
+
+.asImage {
+    width: 50%;
+    height: 100%;
+}
+.asText {
+    width: 50%;
+    height: 100%;
+    display: block;
+    color: #DDDDDD;
+}
+
+.asTextHeading, .asMainText{
+    height: 50%;
+    width: 100%;
+}
+.asMainText{
+  align-items: flex-start;
+  font-size: x-large;
+  text-align: center;
+}
+.asTextHeading {
+    color: #F05454;
+}
+.asImage img {
+    height: 50%;
+    width: auto;
+}
+
+.sectionDivider {
+    width: 100%;
+    height: 75px;
+    background-color: #DDDDDD;
+    font-size: xx-large;
+    font-family: monospace
+}
+.sectionDivider span {
+    color: #FF2E63;
+    margin: 10px;
+}
+.largeSpan span {
+    font-weight: bolder;
+}
+
+.skillSection {
+    width: 100%;
+    height: 25%;
+    background-color: #222831;
+}
+.skillsImages {
+    width: 10%;
+    height: auto;
+}
+.skillsImages img {
+    height: auto;
+    width: 50%;
+}
+
+.projectSection {
+    width: 100%;
+    height: 100%;
+    background-color: #222831;
+    display: block;
+}
+.projectMainHeading {
+    width: 100%;
+    height: 10%;
+    color: #F05454;
+    font-size: x-large;
+    font-weight: 800;
+}
+.allProjects {
+    width: 100%;
+    height: 90%;
+}
+
+.projectSection .projectDiv {
+    width: 50%;
+    height: 100%;
+}
+.projectHeading {
+    font-size: x-large;
+    color:#DDDDDD;
+    width: 100%;
+    height: 10%;
+}
+.projectImage {
+    width: 100%;
+    height: 25%;
+}
+.projectImage img {
+    height: 100%;
+    width: auto;
+    border-radius: 2px;
+}
+.projectDescription {
+    height: 50%;
+    width: 100%;
+    margin-top: 10px;
+}
+.projectDescription p {
+    color: #DDDDDD;
+    margin: 0;
+    height: 25%;
+    width: 80%;
+    text-align: center;
+    left: 50%;
+    position: relative;
+    transform: translate(-50%,0);
+    font-size: larger;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.projectDescription p span {
+    color: #F05454;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+#PETimage {
+    cursor: pointer;
+}
+
+.educationSection {
+    width: 100%;
+    height: 100%;
+    background-color: #222831;
+    color: #DDDDDD;
+}
+.edSectionHeading {
+    width: 100%;
+    height: 10%;
+    font-size: x-large;
+    font-weight: 800;
+}
+.allEds {
+    width: 100%;
+    height: 90%;
+    text-align: center;
+}
+.indEd {
+    width: 30%;
+    height: 80%;
+}
+.edIcon img {
+    width: 50%;
+    height: auto;
+}
+.edDet{
+    margin: 10px;
+    font-size: x-large;
+}
+.edHeading {
+    margin: 10px;
+    font-size: xx-large;
+    color: #F05454;
+}
+.Links {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 25px;
+    right: 50px;
+    cursor: pointer;
+}
+.eachLink {
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    background-color: transparent;
+    border-radius: 50%;
+    transition-duration: 0.5s;
+}
+.eachLink a {
+    width: 50%;
+}
+.eachLink img {
+    width: 100%;
+}
+#arrow img{
+    width: 50%;
+}
+#linkd {
+    background-color: #0077B7;
+}
+#insta {
+    background-image: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+#git {
+    background-color: #0D2636;
+}
+.rotate {
+    transform: rotate(180deg);
+    width: 50px;
+    height: 50px;
+}
