@@ -33,3 +33,9 @@ openImageInNewTab = () => {
 	let url = petimg.getAttribute('src');
 	window.open(url);
 };
+changeIcon = () => {
+	document.getElementById('desdev').src = '../Icons/DevDesIcon2.png';
+};
+changeBack = () => {
+	document.getElementById('desdev').src = '../Icons/DevDesIcon.png';
+};
