@@ -62,7 +62,7 @@ section {
     }
 }
 .desDevLogo img.top {
-    animation: testing 3s 5 ease-in-out;
+    animation: testing 3s infinite ease-in-out;
     opacity: 0;
 }
 .texts {
