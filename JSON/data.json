@@ -1,0 +1,29 @@
+[{
+    "id":"1",
+    "projectName":"Personal Expense Tracker",
+    "stackName":"M.E.R.N",
+    "bgImage":"../Images/PETdisplay.png",
+    "mainImage":"../Images/PET.png",
+    "details": ["A React based project which keep track of all the transactions made including salary credit, bonuscredit or anything, and shows the monthly expense on different things.", "This tracker also shows the graphical representation of one's personal expenses and savings in comparison with every month."]
+},{
+    "id":"2",
+    "projectName":"Book and Author Review",
+    "stackName":"Java Servlet Pages",
+    "bgImage":"../Images/BARdisplay.png",
+    "mainImage":"../Images/BAR.png",
+    "details":["Website that provides feedback for any particular book or an author before anyone read it.", "It is based on HTML, CSS, JSP, SQL with a well organized database structure.", "Performed a key role in the development process of the UI portion of the web application."]
+},{
+    "id":"3",
+    "projectName":"Time Tracker",
+    "stackName":"Vanilla JavaScript",
+    "bgImage":"../Images/pexels-moose-photos-1037993.jpg",
+    "mainImage":"../Images/Main Page.png",
+    "details":["Vanilla Javascript based time tracker keeps track of time spent on daily task, and provide overall record of the time."]
+},{
+    "id":"4",
+    "projectName":"Portfolio",
+    "stackName":"HTML/CSS/JavaScript",
+    "bgImage":"../Images/PFLdisplay.png",
+    "mainImage":"../Images/PFLImage.png",
+    "details":["Portfolio showcasing all my work, skills and career details. Based on HTML, CSS, JavaScript"]
+}]

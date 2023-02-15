@@ -1,0 +1,191 @@
+.about {
+    height: 1000px;
+    background-color: white;
+}
+.aboutHeading {
+    width: 100%;
+    height: 15%;
+    font-size: xx-large;
+    font-weight: 600;
+    color: #252934;
+}
+.aboutBorder {
+    width: fit-content;
+    position: relative;
+    padding-top: 20px;
+    margin-top: 50px;
+    padding-bottom: 10px;
+    opacity: 0;
+}
+.headingAnimation {
+    opacity: 1;
+    animation: aboutHeadingAnimation 0.7s 1 ease-in-out;
+}
+.aboutBorder::before {
+    content: '';
+    width: 50%;
+    position: absolute;
+    border-bottom: 5px solid #252934;
+    left: 25%;
+    bottom: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.aboutSkills {
+    width: 100%;    
+    height: 25%;
+}
+.skillIcons {
+    width: 20%;
+    height: 100%;
+    margin-top: 50px;
+}
+.skillAnimations {
+    animation: skillAnimation 0.7s 1 ease-in-out;
+}
+.infoAnimation {
+    opacity: 1;
+    animation: infoAnimation 0.7s 1 ease-in-out;
+}
+.eachSkillIcon {
+    height: 50%;
+}
+.eachSkillIcon img {
+    padding-left: 100px;
+    padding-right: 100px;
+    height: 0;
+}
+.skillTittle {
+    font-size: larger;
+    opacity: 0;
+    font-weight: 600;
+    color: #252934;
+}
+.skillInfo {
+    opacity: 0;
+    color: #696969;
+    text-align: center;
+    width: 80%;
+}
+.aboutDescArea {
+    height: 60%;
+    width: 100%;
+}
+.aboutDescription {
+    width: 100%;
+    height: 70%;
+}
+
+.aboutDescAnimation1 {
+    animation: aboutDescAnimation1 0.7s 1 ease-in-out;
+}
+
+.aboutDescAnimation2 {
+    animation: aboutDescAnimation2 0.7s 1 ease-in-out;
+}
+.aboutDescImageText {
+    width: 30%;
+    height: 100%;
+    opacity: 0;
+}
+.myImage {
+    height: 50%;
+}
+.myImage img {
+    object-fit: cover;
+    height: 100%;
+}
+.myDescriptionText {
+    height: 50%;
+    text-align: center;
+    font-size: medium;
+    color: #696969;
+}
+.aboutDescSkillBars {
+    width: 40%;
+    height: 80%;
+    display: block;
+    margin-left: 50px;
+    opacity: 0;
+}
+.eachSkillBarArea {
+    width: 100%;
+    padding-bottom: 5px;
+    height: 10%;
+}
+.skillName {
+    background-color: #04C2C9;
+    width: 20%;
+    height: 80%;
+    color: white;
+}
+.fullBar {
+    width: 80%;
+    height: 80%;
+    background-color: #EEEEEE;
+}
+.skillPercentageBar {
+    height: 100%;
+    background-color: #00A1A7;
+    transition-duration: 0.3s;
+}
+.percentDisplay {
+    background-color: #EEEEEE;
+    height: 80%;
+    padding-right: 5px;
+}
+.connectLinkText {
+    color: #04C2C9;
+    cursor: pointer;
+    font-weight: 600;
+}
+@keyframes aboutHeadingAnimation {
+    0% {
+        transform: translateX(-250%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }   
+}
+@keyframes skillAnimation {
+    0% {
+        height: 0;
+        opacity: 0;
+    }
+    100% {
+        height: 100%;
+        opacity: 1;
+    }   
+}
+@keyframes aboutDescAnimation1 {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }   
+}
+@keyframes aboutDescAnimation2 {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }   
+}
+@keyframes infoAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }   
+}
