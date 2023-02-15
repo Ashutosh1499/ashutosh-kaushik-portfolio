@@ -1,0 +1,262 @@
+.projects {
+    height: 700px;
+    padding-bottom: 100px;
+    background-color: #F5F5F5;
+}
+.projectsHeading {
+    width: 100%;
+    height: 20%;
+    font-size: xx-large;
+    font-weight: 600;
+    color: #252934;
+}
+.projectsHeading span {
+    font-size: xx-large;
+    font-weight: 600;
+}
+.projectBorder {
+    width: fit-content;
+    position: relative;
+    padding-top: 20px;
+    margin-top: 50px;
+    padding-bottom: 10px;
+    opacity: 0;
+}
+.projectBorder::before {
+    content: '';
+    width: 50%;
+    position: absolute;
+    border-top: 5px solid #252934;
+    left: 25%;
+    bottom: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.projectsTabs {
+    width: 100%;
+    height: 20%;
+    opacity: 0;
+    transition-duration: 1s;
+}
+.projTabsArea {
+    height: 30%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.eachProjTab {
+    height: 100%;
+    width: fit-content;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: larger;
+    font-weight: 600;
+    cursor: pointer;
+    transition-duration: 1s;
+}
+.eachProjTab span {
+    z-index: 1;
+    transition-duration: 0.5s;
+}
+.tabBackground {
+    width: 0;
+    position: absolute;
+    transition-duration: 0.3s;
+}
+.tabFullWidth {
+    width: 100px;
+}
+.active {
+    background-color: #5de1e6;
+    color: white;
+}
+.projectsImages {
+    height: 60%;
+    width: 100%;
+}
+.allImagesArea {
+    width: 1200px;
+    height: fit-content;
+}
+.eachImage {
+    height: 250px;
+    width: 400px;
+    transition-duration: 0.3s;
+    opacity: 0;
+}
+.eachImage img {
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+}
+.imagesAnimation {
+    opacity: 1;
+    animation: projectImagesAnimation 0.7s 1 ease-in-out;
+}
+.projectName {
+    height: 126px;
+    width: 400px;
+    position: absolute;
+    background-color: #F5F5F5;
+    transition-duration: 0.5s;
+    opacity: 0;
+}
+.projectName h4, .projectName h5  {
+    cursor: default;
+    user-select: none;
+}
+.learnMoreButton {
+    transform: translateY(125px);
+    opacity: 0;
+    height: 125px;
+    position: absolute;
+    background-color: #F5F5F5;
+    transition-duration: 0.5s;
+    width: 400px;
+}
+.learnMoreButton button {
+    width: 150px;
+    height: 50px;
+    background-color: transparent;
+    border: 2px solid #5de1e6;
+    transition-duration: 0.3s;
+    font-size: medium;
+    transform: translateY(100%);
+    opacity: 0;
+}
+.learnMoreButton button:hover {
+    background-color: #5de1e6;
+    border-color: #5de1e6;
+    cursor: pointer;
+    color: white;
+}
+.projectNameChild {
+    transform: translateY(-100%);
+    opacity: 0;
+    transition-duration: 0.3s;
+}
+.eachProjectDetails {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.15)
+}
+.projectDetailArea {
+    width: 55%;
+    height: 650px;
+    background-color: #F5F5F5;
+    box-shadow: 0 0 25px 0 rgb(175, 175, 175);
+}
+.projectDetailAreaAnimation {
+    animation: projectDetailsLoading 0.5s 1 ease-in-out;
+}
+.projImages {
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.projImages img {
+    width: 80%;
+    height: auto;
+}
+
+.changeButtons {
+    width: 100%;
+    height: 40px;
+    background-color: #252934;
+}
+.changeButtons h3 {
+    color: #F5F5F5;
+}
+.changeButtons img:hover {
+    cursor: pointer;
+}
+.individualProjDetailArea {
+    width: 100%;
+    height: 210px;
+}
+.individualProjDetailArea h2 {
+    margin: 10px;
+    margin-right: 0;
+}
+.projectDescription {
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    font-size: medium;
+    overflow-y: auto;
+}
+.projectDescription div {
+    width: 90%;
+    text-align: left;
+    padding-left: 10px;
+    word-wrap: break-word;
+    color: rgb(134, 134, 134);
+}
+
+.linkButton {
+    height: 60px;
+}
+.linkButton button {
+    margin-left: 10px;
+    height: 40px;
+    width: 70px;
+    font-size: medium;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: none;
+    outline: none;
+    background-color: #252934;
+    color:#F5F5F5;
+    cursor: pointer;
+}
+
+#proj1, #proj1lmb {
+    background-color: white;
+}
+#proj2, #proj2lmb {
+    background-color: #312A1F;
+    color: white;
+}
+#proj3, #proj3lmb {
+    background-image: linear-gradient(to right, #F6B6B4 0%, #F6B6B4 50%, #C5E8E2 50%, #C5E8E2);
+}
+#proj4, #proj4lmb {
+    background-color: #FBEBA3;
+}
+
+#projDetail1 {
+    display: none;
+}
+#projDetail2 {
+    display: none;
+}
+@keyframes projectImagesAnimation {
+    0% {
+        opacity: 0;
+        transform: scale(0.8) translateY(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) translateY(0px);
+    }
+}
+@keyframes projectDetailsLoading {
+    0% {
+        opacity: 0;
+        transform: scale(0.7);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
