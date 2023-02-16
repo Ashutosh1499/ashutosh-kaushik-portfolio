@@ -117,6 +117,7 @@
 }
 .eachSocialMediaIcon img {
     width: 40%;
+    transition-duration: 0.3s;
 }
 .folioNote {
     width: 100%;
@@ -127,7 +128,9 @@
     padding: 1px;
     color: #04C2C9;
 }
-
+.rotateAnimation {
+    animation: rotateAnimation 0.2s 1 linear;
+}
 @keyframes contactBoxAnimation {
     0% {
         height: 0;
@@ -138,5 +141,16 @@
         height: 80%;
         width: 30%;
         opacity: 1;
+    }
+}
+@keyframes rotateAnimation {
+    0% {
+        transform: rotate(0) scale(1);
+    }
+    50% {
+        transform: rotate(180deg) scale(1.25);
+    }
+    100% {
+        transform: rotate(360deg) scale(1);
     }
 }

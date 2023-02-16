@@ -22,3 +22,16 @@ githubUrl = () => {
 instagramUrl = () => {
 	window.open('https://www.instagram.com/ak.d.signs/');
 };
+let eachSocialMediaIcon = document.querySelectorAll('.eachSocialMediaIcon');
+eachSocialMediaIcon.forEach(icon => {
+	icon.onmouseover = () => {
+		// icon.getElementsByTagName('img')[0].style.transform = 'rotate(360deg)';
+		icon.getElementsByTagName('img')[0].classList.add('rotateAnimation');
+	};
+});
+eachSocialMediaIcon.forEach(icon => {
+	icon.onmouseleave = () => {
+		// icon.getElementsByTagName('img')[0].style.transform = 'rotate(0)';
+		icon.getElementsByTagName('img')[0].classList.remove('rotateAnimation');
+	};
+});
