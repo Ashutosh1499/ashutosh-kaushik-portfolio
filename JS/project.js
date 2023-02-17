@@ -263,7 +263,6 @@ displayDetails = id => {
 			return response.json();
 		})
 		.then(function (data) {
-			console.log(data[id]);
 			document.getElementById(
 				'projectName',
 			).innerText = `${data[id].projectName}`;
@@ -273,7 +272,6 @@ displayDetails = id => {
 			document.getElementById(
 				'projectMainImages',
 			).src = `${data[id].mainImage}`;
-			console.log(data[id].mainImage);
 			let details = data[id].details;
 			document.getElementById('projectDescription').innerHTML = '';
 			details.forEach(detail => {
@@ -281,10 +279,10 @@ displayDetails = id => {
 					'projectDescription',
 				).innerHTML += `<div>${detail}</div>`;
 			});
-			console.log(document.getElementById('projImages'));
-			data.forEach(d => {
-				console.log(d.projectName);
-			});
+			let linkButton = document.getElementById('linkButton');
+			linkButton.onclick = () => {
+				window.open(data[id].gitLink);
+			};
 		})
 		.catch(function (err) {
 			console.log(err);
