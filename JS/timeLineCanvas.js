@@ -12,7 +12,6 @@ let flag3 = true;
 let flag4 = true;
 
 displayTimelineCanvas = () => {
-	console.log('h1');
 	setInterval(() => {
 		if (i1 < tlCanvas.height - 50) {
 			tc.beginPath();

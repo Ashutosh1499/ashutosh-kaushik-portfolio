@@ -4,6 +4,7 @@
     "stackName":"M.E.R.N",
     "bgImage":"../Images/PETdisplay.png",
     "mainImage":"../Images/PET.png",
+    "gitLink":"https://github.com/Ashutosh1499/PET-client",
     "details": ["A React based project which keep track of all the transactions made including salary credit, bonuscredit or anything, and shows the monthly expense on different things.", "This tracker also shows the graphical representation of one's personal expenses and savings in comparison with every month."]
 },{
     "id":"2",
@@ -18,6 +19,7 @@
     "stackName":"Vanilla JavaScript",
     "bgImage":"../Images/pexels-moose-photos-1037993.jpg",
     "mainImage":"../Images/Main Page.png",
+    "gitLink":"https://github.com/Ashutosh1499/Time-Tracker",
     "details":["Vanilla Javascript based time tracker keeps track of time spent on daily task, and provide overall record of the time."]
 },{
     "id":"4",
@@ -25,5 +27,6 @@
     "stackName":"HTML/CSS/JavaScript",
     "bgImage":"../Images/PFLdisplay.png",
     "mainImage":"../Images/PFLImage.png",
+    "gitLink":"https://github.com/Ashutosh1499/ashutosh-kaushik-portfolio",
     "details":["Portfolio showcasing all my work, skills and career details. Based on HTML, CSS, JavaScript"]
 }]
