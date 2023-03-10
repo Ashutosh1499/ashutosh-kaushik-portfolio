@@ -125,6 +125,13 @@ projImgs.push(p4Image);
 let proj4lmb = document.getElementById('proj4lmb');
 projlmbs.push(proj4lmb);
 
+let proj5 = document.getElementById('proj5');
+projs.push(proj5);
+let p5Image = document.getElementById('p5Image');
+projImgs.push(p5Image);
+let proj5lmb = document.getElementById('proj5lmb');
+projlmbs.push(proj5lmb);
+
 let projectNameChildDivs = document.querySelectorAll('.projectNameChild');
 
 let projLmbs = document.querySelectorAll('.projLmbs');
@@ -178,6 +185,13 @@ p4Image.onmouseleave = () => {
 	makeInvisible(3);
 };
 
+p5Image.onmouseover = () => {
+	makeVisible(4);
+};
+p5Image.onmouseleave = () => {
+	makeInvisible(4);
+};
+
 proj1.onmouseover = () => {
 	makeVisible(0);
 };
@@ -206,6 +220,13 @@ proj4.onmouseleave = () => {
 	makeInvisible(3);
 };
 
+proj5.onmouseover = () => {
+	makeVisible(4);
+};
+proj5.onmouseleave = () => {
+	makeInvisible(4);
+};
+
 proj1lmb.onmouseover = () => {
 	makeVisible(0);
 };
@@ -232,6 +253,13 @@ proj4lmb.onmouseover = () => {
 };
 proj4lmb.onmouseleave = () => {
 	makeInvisible(3);
+};
+
+proj5lmb.onmouseover = () => {
+	makeVisible(4);
+};
+proj5lmb.onmouseleave = () => {
+	makeInvisible(4);
 };
 
 let currentProject = 0;

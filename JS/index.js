@@ -148,7 +148,7 @@ window.onscroll = e => {
 		) {
 			let i = 0;
 			setInterval(() => {
-				if (i < 4) {
+				if (i < 5) {
 					allImages[i].classList.add('imagesAnimation');
 					i = i + 1;
 				}

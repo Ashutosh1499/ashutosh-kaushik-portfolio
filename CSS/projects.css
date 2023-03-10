@@ -233,6 +233,9 @@
 #proj4, #proj4lmb {
     background-color: #FBEBA3;
 }
+#proj5, #proj5lmb {
+    background-color: #fff;
+}
 
 #projDetail1 {
     display: none;
