@@ -29,4 +29,13 @@
     "mainImage":"../Images/PFLImage.png",
     "gitLink":"https://github.com/Ashutosh1499/ashutosh-kaushik-portfolio",
     "details":["Portfolio showcasing all my work, skills and career details. Based on HTML, CSS, JavaScript"]
-}]
+},{
+    "id":"5",
+    "projectName":"Khana Ghar - Restaurant delivery web appplication",
+    "stackName":"M.E.R.N",
+    "bgImage":"../Images/kgImage.png",
+    "mainImage":"../Images/kgimg1.png",
+    "gitLink":"https://github.com/Ashutosh1499/khanagharApp",
+    "details":["Developed restaurant delivery web application using React, Node.js, MongoDB, and Express.js, optimizing for mobile and web performance.", "Improved user experience by reducing page load times by 25% and increasing customer base by 30%"]
+}
+]
