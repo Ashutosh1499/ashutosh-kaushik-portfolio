@@ -94,7 +94,7 @@
 }
 .imagesAnimation {
     opacity: 1;
-    animation: projectImagesAnimation 0.7s 1 ease-in-out;
+    animation: projectImagesAnimation 0.3s 1 ease-in-out;
 }
 .projectName {
     height: 126px;
