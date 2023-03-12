@@ -70,7 +70,7 @@ html {
     width: auto;
 }
 .myLogo {
-    width: 600px;
+    /* width: 600px; */
     height: fit-content;
 }
 .introText {
@@ -157,4 +157,41 @@ html {
     position: fixed;
     top: 0;
     width: 100%;
+}
+
+@media screen and (min-width: 0) and (max-width: 480px) {
+    .introText {
+        font-size: small;
+    }
+    .introButton button {
+        height: 25px;
+        width: 150px;
+        font-size: small;
+    }
+    .topBar span {
+        font-size: small;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 720px) {
+    .introText {
+        font-size: large;
+    }
+    .introButton button {
+        height: 35px;
+        width: 150px;
+        font-size: small;
+    }
+    .topBar span {
+        font-size: medium;
+    }
+}
+
+@media screen and (min-width: 721px) and (max-width: 1080px) {
+    .introText {
+        font-size: x-large;
+    }
+    .skillHeight {
+        height: 90%;
+    }
 }

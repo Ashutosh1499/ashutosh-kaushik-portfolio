@@ -301,16 +301,21 @@ displayDetails = id => {
 				'projectMainImages',
 			).src = `${data[id].mainImage}`;
 			let details = data[id].details;
-			document.getElementById('projectDescription').innerHTML = '';
+			let descDiv = document.getElementById('projectDescription');
+			descDiv.innerHTML = '';
 			details.forEach(detail => {
-				document.getElementById(
-					'projectDescription',
-				).innerHTML += `<div>${detail}</div>`;
+				descDiv.innerHTML += `<div>${detail}</div>`;
 			});
 			let linkButton = document.getElementById('linkButton');
 			linkButton.onclick = () => {
 				window.open(data[id].gitLink);
 			};
+			console.log(data[id].projLink);
+			if (data[id].projLink !== undefined) {
+				console.log(data[id].projLink);
+				let lastDiv = descDiv.lastElementChild;
+				lastDiv.innerHTML += `<a href="${data[id].projLink}"><img style="width:15px; height:auto;" src="/Icons/extLinkIcon.png"/></a>`;
+			}
 		})
 		.catch(function (err) {
 			console.log(err);

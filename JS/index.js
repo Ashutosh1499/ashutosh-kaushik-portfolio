@@ -105,7 +105,7 @@ window.onscroll = e => {
 		setInterval(() => {
 			if (i < skillIcons.length) {
 				skillIcons[i].classList.add('skillAnimations');
-				skillIcons[i].style.height = '100%';
+				skillIcons[i].style.opacity = '1';
 				skillInfo[i].classList.add('infoAnimation');
 				skillInfo[i].style.opacity = '1';
 				skillTittles[i].classList.add('infoAnimation');
@@ -198,7 +198,7 @@ if (
 	setInterval(() => {
 		if (i < skillIcons.length) {
 			skillIcons[i].classList.add('skillAnimations');
-			skillIcons[i].style.height = '100%';
+			skillIcons[i].style.opacity = '1';
 			skillInfo[i].classList.add('infoAnimation');
 			skillInfo[i].style.opacity = '1';
 			skillTittles[i].classList.add('infoAnimation');
@@ -238,11 +238,12 @@ if (
 	) {
 		let i = 0;
 		setInterval(() => {
-			if (i < 4) {
+			if (i < 5) {
 				allImages[i].classList.add('imagesAnimation');
+				console.log(i);
 				i = i + 1;
 			}
-		}, 100);
+		}, 200);
 	}
 } else {
 	projectsTB.style.color = 'white';

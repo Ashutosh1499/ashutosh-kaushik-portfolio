@@ -20,7 +20,8 @@
     "bgImage":"../Images/pexels-moose-photos-1037993.jpg",
     "mainImage":"../Images/Main Page.png",
     "gitLink":"https://github.com/Ashutosh1499/Time-Tracker",
-    "details":["Vanilla Javascript based time tracker keeps track of time spent on daily task, and provide overall record of the time."]
+    "details":["Vanilla Javascript based time tracker keeps track of time spent on daily task, and provide overall record of the time.","Live Demo - "],
+    "projLink":"https://ashutosh1499.github.io/Time-Tracker/"
 },{
     "id":"4",
     "projectName":"Portfolio",
@@ -28,7 +29,8 @@
     "bgImage":"../Images/PFLdisplay.png",
     "mainImage":"../Images/PFLImage.png",
     "gitLink":"https://github.com/Ashutosh1499/ashutosh-kaushik-portfolio",
-    "details":["Portfolio showcasing all my work, skills and career details. Based on HTML, CSS, JavaScript"]
+    "details":["Portfolio showcasing all my work, skills and career details. Based on HTML, CSS, JavaScript","Live Demo - "],
+    "projLink":"https://ashutosh.world"
 },{
     "id":"5",
     "projectName":"Khana Ghar - Restaurant delivery web appplication",
@@ -36,6 +38,7 @@
     "bgImage":"../Images/kgImage.png",
     "mainImage":"../Images/kgimg1.png",
     "gitLink":"https://github.com/Ashutosh1499/khanagharApp",
-    "details":["Developed restaurant delivery web application using React, Node.js, MongoDB, and Express.js, optimizing for mobile and web performance.", "Improved user experience by reducing page load times by 25% and increasing customer base by 30%"]
+    "details":["Developed restaurant delivery web application using React, Node.js, MongoDB, and Express.js, optimizing for mobile and web performance.", "Improved user experience by reducing page load times by 25% and increasing customer base by 30%","Live Demo - "],
+    "projLink":"https://khanaghardelivery.netlify.app/"
 }
 ]
