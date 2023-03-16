@@ -51,9 +51,6 @@
 				</div>
 			</div>
 			<div class="topBar flexBoxCenter" id="topBar">
-				<span id="homeTB" onclick="scrollToHome()">
-					<img src="/Icons/a-icon.png" alt=""
-				/></span>
 				<span id="aboutTB" onclick="scrollToAbout()">About</span>
 				<span id="projectsTB" onclick="scrollToProjects()">Projects</span>
 				<span id="timelineTB" onclick="scrollToTimeline()">Timeline</span>
@@ -302,7 +299,7 @@
 						>
 							<div class="tabBackground" id="xdTabHover"></div>
 							<div class="tabBackground" id="xdTab"></div>
-							<span id="xdTabSpan"> Adobe XD </span>
+							<span id="xdTabSpan"> XD </span>
 						</div>
 					</div>
 				</div>
@@ -400,11 +397,15 @@
 					</div>
 				</div>
 				<div class="um flexBoxCenter">
-					<img src="/Images/Maintenance.jpg" alt="" />
-					<span style="text-align: center">
-						<h1>Under Maintenance</h1>
-						Please scroll down to next section</span
-					>
+					<div class="umimg">
+						<img src="/Images/Maintenance.jpg" alt="" />
+					</div>
+					<div class="umdiv">
+						<span style="text-align: center">
+							<h1>Under Maintenance</h1>
+							Please scroll down to next section</span
+						>
+					</div>
 				</div>
 			</div>
 			<div class="contact" id="contactSection">
@@ -472,7 +473,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="eachProjectDetails flexBoxAlignStart" id="eachProjectDetails">
+			<div class="eachProjectDetails flexBoxCenter" id="eachProjectDetails">
 				<div class="projectDetailArea" id="projDetail">
 					<div class="projImages flexBoxCenter" id="projImages">
 						<img src="#" alt="" id="projectMainImages" />

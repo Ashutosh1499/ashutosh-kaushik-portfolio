@@ -214,6 +214,10 @@
         width: 90%;
         margin-left: 5%;
     }
+    .skillName {
+        font-size: smaller;
+        padding: 0px;
+    }
 }
 
 @media screen and (min-width: 481px) and (max-width: 720px) {
@@ -238,6 +242,9 @@
         height: 50%;
         width: 90%;
         margin-left: 5%;
+    }
+    .skillName {
+        font-size: medium;
     }
 }
 @media screen and (min-width: 721px) and (max-width: 1080px) {
