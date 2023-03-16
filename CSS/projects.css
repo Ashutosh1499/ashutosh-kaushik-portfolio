@@ -45,7 +45,7 @@
     width: 50%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 .eachProjTab {
     height: 100%;
@@ -261,5 +261,77 @@
     100% {
         opacity: 1;
         transform: scale(1);
+    }
+}
+@media screen and (min-width: 0) and (max-width: 480px) {
+    .eachProjTab {
+        font-size: small;
+    }
+    .eachImage {
+        width: 150px !important;
+        height: 100px !important;
+    }
+    .projectName {
+        height: 51px;
+        width: 150px;
+        font-size: x-small;
+    }
+    .learnMoreButton {
+        height: 50px;
+        width: 150px;
+        font-size: small;
+        transform: translateY(50px);
+    }
+    .learnMoreButton button {
+        width: 75px;
+        height: 25px;
+        font-size: smaller;
+    }
+    .projectDetailArea {
+        height: 550px;
+        width: 75%;
+    }
+    .projImages {
+        height: 300px;
+    }
+    .individualProjDetailArea {
+        font-size: xx-small;
+        height: 200px;
+    }
+}
+@media screen and (min-width: 481px) and (max-width: 720px) {
+    .eachProjTab {
+        font-size: small;
+    }
+    .eachImage {
+        width: 200px !important;
+        height: 150px !important;
+    }
+    .projectName {
+        height: 76px;
+        width: 200px;
+        font-size: small;
+    }
+    .learnMoreButton {
+        height: 75px;
+        width: 200px;
+        font-size: small;
+        transform: translateY(75px);
+    }
+    .learnMoreButton button {
+        width: 75px;
+        height: 25px;
+        font-size: smaller;
+    }
+    .projectDetailArea {
+        height: 550px;
+        width: 75%;
+    }
+    .projImages {
+        height: 300px;
+    }
+    .individualProjDetailArea {
+        font-size: xx-small;
+        height: 200px;
     }
 }
