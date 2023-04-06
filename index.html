@@ -13,9 +13,18 @@
 		<link rel="shortcut icon" href="/Icons/A-icon.png" />
 	</head>
 	<style>
+		#my-text {
+			margin-left: 10px;
+			clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+		}
+		.char:nth-child(odd) {
+			transform: translateY(100%) rotate(359deg) scale(2);
+		}
+		.char:nth-child(even) {
+			transform: translateY(-120%) rotate(359deg) scale(2);
+		}
 		.char {
-			transform: translateY(50px);
-			transition: transform 0.3s;
+			transition: transform 0.6s;
 		}
 	</style>
 	<body>
@@ -30,16 +39,7 @@
 						<div class="upperText flexBoxCenter">
 							<span class="flexBoxCenter">
 								Hi!, I'm
-								<span
-									id="my-text"
-									style="
-										margin-left: 10px;
-										clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%); ;
-									"
-									class="introName"
-								>
-									Ashutosh kaushik
-								</span>
+								<span id="my-text" class="introName"> Ashutosh kaushik </span>
 							</span>
 						</div>
 						<div class="lowerText flexBoxCenter">
@@ -525,8 +525,11 @@
 		<script>
 			const myText = new SplitType('#my-text');
 			gsap.to('.char', {
+				x: 0,
 				y: 0,
-				stagger: 0.03,
+				scale: 1,
+				rotation: 0,
+				stagger: 0.1,
 				delay: 0.01,
 				duration: 0.1,
 			});
