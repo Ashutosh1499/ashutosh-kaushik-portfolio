@@ -12,6 +12,12 @@
 		<link rel="stylesheet" href="/CSS/contact.css" />
 		<link rel="shortcut icon" href="/Icons/A-icon.png" />
 	</head>
+	<style>
+		.char {
+			transform: translateY(50px);
+			transition: transform 0.3s;
+		}
+	</style>
 	<body>
 		<div class="mainContainer" id="mainContainer">
 			<div class="greet" id="greet">
@@ -22,9 +28,18 @@
 					</div>
 					<div class="introText">
 						<div class="upperText flexBoxCenter">
-							<span>
+							<span class="flexBoxCenter">
 								Hi!, I'm
-								<span class="introName"> Ashutosh kaushik </span>
+								<span
+									id="my-text"
+									style="
+										margin-left: 10px;
+										clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%); ;
+									"
+									class="introName"
+								>
+									Ashutosh kaushik
+								</span>
 							</span>
 						</div>
 						<div class="lowerText flexBoxCenter">
@@ -500,6 +515,22 @@
 				</div>
 			</div>
 		</div>
+		<script src="https://unpkg.com/split-type"></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"
+			integrity="sha512-gsEItzcNkWxfxHjr4BaEZAd9YuRWYjxnj7c/yukcZ0/nWehUb5TjJNyyv1ApCU2DFH/qgw+stFZHPOKnoQnIuQ=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+		<script>
+			const myText = new SplitType('#my-text');
+			gsap.to('.char', {
+				y: 0,
+				stagger: 0.03,
+				delay: 0.01,
+				duration: 0.1,
+			});
+		</script>
 		<script src="https://smtpjs.com/v3/smtp.js"></script>
 	</body>
 	<script src="/JS/index.js"></script>
