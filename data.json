@@ -1,0 +1,44 @@
+[{
+    "id":"1",
+    "projectName":"Personal Expense Tracker",
+    "stackName":"M.E.R.N",
+    "bgImage":"../Images/PETdisplay.png",
+    "mainImage":"../Images/PET.png",
+    "gitLink":"https://github.com/Ashutosh1499/PET-client",
+    "details": ["A React based project which keep track of all the transactions made including salary credit, bonuscredit or anything, and shows the monthly expense on different things.", "This tracker also shows the graphical representation of one's personal expenses and savings in comparison with every month."]
+},{
+    "id":"2",
+    "projectName":"Book and Author Review",
+    "stackName":"Java Servlet Pages",
+    "bgImage":"../Images/BARdisplay.png",
+    "mainImage":"../Images/BAR.png",
+    "details":["Website that provides feedback for any particular book or an author before anyone read it.", "It is based on HTML, CSS, JSP, SQL with a well organized database structure.", "Performed a key role in the development process of the UI portion of the web application."]
+},{
+    "id":"3",
+    "projectName":"Time Tracker",
+    "stackName":"Vanilla JavaScript",
+    "bgImage":"../Images/pexels-moose-photos-1037993.jpg",
+    "mainImage":"../Images/Main Page.png",
+    "gitLink":"https://github.com/Ashutosh1499/Time-Tracker",
+    "details":["Vanilla Javascript based time tracker keeps track of time spent on daily task, and provide overall record of the time.","Live Demo - "],
+    "projLink":"https://ashutosh1499.github.io/Time-Tracker/"
+},{
+    "id":"4",
+    "projectName":"Portfolio",
+    "stackName":"HTML/CSS/JavaScript",
+    "bgImage":"../Images/PFLdisplay.png",
+    "mainImage":"../Images/PFLImage.png",
+    "gitLink":"https://github.com/Ashutosh1499/ashutosh-kaushik-portfolio",
+    "details":["Portfolio showcasing all my work, skills and career details. Based on HTML, CSS, JavaScript","Live Demo - "],
+    "projLink":"https://ashutosh.world"
+},{
+    "id":"5",
+    "projectName":"Khana Ghar - Restaurant delivery web appplication",
+    "stackName":"M.E.R.N",
+    "bgImage":"../Images/kgImage.png",
+    "mainImage":"../Images/kgimg1.png",
+    "gitLink":"https://github.com/Ashutosh1499/khanagharApp",
+    "details":["Developed restaurant delivery web application using React, Node.js, MongoDB, and Express.js, optimizing for mobile and web performance.", "Improved user experience by reducing page load times by 25% and increasing customer base by 30%","Live Demo - "],
+    "projLink":"https://khanaghardelivery.netlify.app/"
+}
+]
