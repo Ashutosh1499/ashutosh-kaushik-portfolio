@@ -13,7 +13,7 @@
 		<link rel="shortcut icon" href="/Icons/A-icon.png" />
 	</head>
 	<style>
-		#my-text {
+		#myText {
 			margin-left: 10px;
 			clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
 		}
@@ -28,6 +28,8 @@
 		}
 	</style>
 	<body>
+		<div id="cursor" class="cursor"></div>
+		<div id="cursorDot" class="cursorDot"></div>
 		<div class="mainContainer" id="mainContainer">
 			<div class="greet" id="greet">
 				<canvas id="greetCanvas"></canvas>
@@ -39,7 +41,7 @@
 						<div class="upperText flexBoxCenter">
 							<span class="flexBoxCenter">
 								Hi!, I'm
-								<span id="my-text" class="introName"> Ashutosh kaushik </span>
+								<span id="myText" class="introName"> Ashutosh kaushik </span>
 							</span>
 						</div>
 						<div class="lowerText flexBoxCenter">
@@ -523,7 +525,7 @@
 			referrerpolicy="no-referrer"
 		></script>
 		<script>
-			const myText = new SplitType('#my-text');
+			const mytext = new SplitType('#myText');
 			gsap.to('.char', {
 				x: 0,
 				y: 0,
@@ -533,6 +535,34 @@
 				delay: 0.01,
 				duration: 0.1,
 			});
+			const cursor = document.querySelector('.cursor');
+			const cursordot = document.querySelector('.cursorDot');
+			const updateCursor = e => {
+				gsap.to('.cursor', {
+					duration: 2,
+					x: e.pageX * 2 - 50 + '%',
+					y: e.pageY * 2 - 50 + '%',
+					ease: 'power3.out',
+				});
+				cursordot.style.top = e.pageY + 'px';
+				cursordot.style.left = e.pageX + 'px';
+			};
+
+			document.addEventListener('mouseleave', () => {
+				cursor.classList.remove('cursorBlock');
+				cursor.classList.add('cursorNone');
+				cursordot.classList.remove('cursorBlock');
+				cursordot.classList.add('cursorNone');
+			});
+
+			document.addEventListener('mouseover', () => {
+				cursor.classList.remove('cursorNone');
+				cursor.classList.add('cursorBlock');
+				cursorDot.classList.remove('cursorNone');
+				cursorDot.classList.add('cursorBlock');
+			});
+
+			window.addEventListener('mousemove', updateCursor);
 		</script>
 		<script src="https://smtpjs.com/v3/smtp.js"></script>
 	</body>

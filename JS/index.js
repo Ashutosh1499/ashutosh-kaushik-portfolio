@@ -179,7 +179,6 @@ window.onscroll = e => {
 		contactTB.style.color = 'white';
 	}
 };
-
 if (window.pageYOffset >= topBarOffset) {
 	topBar.classList.add('sticky');
 	aboutSection.style.paddingTop = '50px';
@@ -301,7 +300,6 @@ if (
 	navigator.userAgent.match(/BlackBerry/i) ||
 	navigator.userAgent.match(/Windows Phone/i)
 ) {
-	f;
 	alert('Please switch to a desktop for better experience.');
 } else {
 }
