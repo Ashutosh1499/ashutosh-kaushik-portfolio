@@ -5,7 +5,7 @@
     "bgImage":"../Images/PETdisplay.png",
     "mainImage":"../Images/PET.png",
     "gitLink":"https://github.com/Ashutosh1499/PET-client",
-    "details": ["A React based project which keep track of all the transactions made including salary credit, bonuscredit or anything, and shows the monthly expense on different things.", "This tracker also shows the graphical representation of one's personal expenses and savings in comparison with every month."]
+    "details": ["A React based project which keep track of all the transactions made including salary credit, bonus credit or anything else, and shows the monthly expense on different things.", "This tracker also shows the graphical representation of one's personal expenses and savings in comparison with every month."]
 },{
     "id":"2",
     "projectName":"Book and Author Review",
